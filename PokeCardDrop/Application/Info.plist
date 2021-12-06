@@ -25,7 +25,7 @@
 	<array>
 		<dict>
 			<key>CFBundleTypeName</key>
-			<string>AirDrop Profile File Type</string>
+			<string>AirDrop File Type</string>
 			<key>LSHandlerRank</key>
 			<string>Default</string>
 			<key>LSItemContentTypes</key>
