@@ -79,7 +79,8 @@ extension SceneDelegate {
         self.window = window
         window.makeKeyAndVisible()
 
-        let vc = PokeCardListViewController.build(pokeCards: AssetLoader.loadWithDecode(name: "cards"))
+        let pokeCardsRepository = PokeCardsRepositoryProvider.provide()
+        let vc = PokeCardListViewController.build(pokeCards: pokeCardsRepository.pokeCards())
         let navigation = UINavigationController(rootViewController: vc)
 
         window.rootViewController = navigation
