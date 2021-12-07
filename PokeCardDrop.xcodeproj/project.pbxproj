@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B65DE94B275E45E100ECC3C6 /* PokeCardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65DE94A275E45E100ECC3C6 /* PokeCardsRepository.swift */; };
+		B6D50618275C5B770071EF99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50617275C5B770071EF99 /* AppDelegate.swift */; };
+		B6D5061A275C5B780071EF99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50619275C5B780071EF99 /* SceneDelegate.swift */; };
+		B6D50621275C5B7A0071EF99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D50620275C5B7A0071EF99 /* Assets.xcassets */; };
+		B6D50624275C5B7A0071EF99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D50622275C5B7A0071EF99 /* LaunchScreen.storyboard */; };
+		B6D5062F275C5B7A0071EF99 /* PokeCardDropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5062E275C5B7A0071EF99 /* PokeCardDropTests.swift */; };
+		B6D50639275C5B7A0071EF99 /* PokeCardDropUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50638275C5B7A0071EF99 /* PokeCardDropUITests.swift */; };
+		B6D5063B275C5B7A0071EF99 /* PokeCardDropUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5063A275C5B7A0071EF99 /* PokeCardDropUITestsLaunchTests.swift */; };
+		B6D5064C275C67C60071EF99 /* PokeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5064B275C67C60071EF99 /* PokeCard.swift */; };
+		B6D5064F275C6BC70071EF99 /* AssetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5064E275C6BC70071EF99 /* AssetLoader.swift */; };
+		B6D50651275C6C110071EF99 /* Data.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D50650275C6C110071EF99 /* Data.xcassets */; };
+		B6D50657275C6EB70071EF99 /* PokeCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50656275C6EB70071EF99 /* PokeCards.swift */; };
+		B6D50660275C76F20071EF99 /* AirDropOnlyActivityItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5065F275C76F20071EF99 /* AirDropOnlyActivityItemSource.swift */; };
+		B6D50663275C77560071EF99 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50662275C77560071EF99 /* Encoder.swift */; };
+		B6D50665275C78F10071EF99 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50664275C78F10071EF99 /* Decoder.swift */; };
+		B6D5066A275D09D90071EF99 /* PokeCardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50669275D09D90071EF99 /* PokeCardListViewController.swift */; };
+		B6D5066C275D09E10071EF99 /* PokeCardListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5066B275D09E10071EF99 /* PokeCardListViewController.storyboard */; };
+		B6D50671275D0AE70071EF99 /* PokeCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5066F275D0AE70071EF99 /* PokeCardTableViewCell.swift */; };
+		B6D50672275D0AE70071EF99 /* PokeCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D50670275D0AE70071EF99 /* PokeCardTableViewCell.xib */; };
+		B6D50674275D0C9D0071EF99 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50673275D0C9D0071EF99 /* UITableViewCell+.swift */; };
+		B6D50677275D0F0E0071EF99 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B6D50676275D0F0E0071EF99 /* Kingfisher */; };
+		B6D5067B275D119E0071EF99 /* PokeCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5067A275D119E0071EF99 /* PokeCardDetailViewController.swift */; };
+		B6D5067D275D11A40071EF99 /* PokeCardDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D5067C275D11A40071EF99 /* PokeCardDetailViewController.storyboard */; };
+		B6D50682275D20F70071EF99 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D50681275D20F70071EF99 /* UIViewController+.swift */; };
+		B6D50685275D21700071EF99 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = B6D50684275D21700071EF99 /* Toast */; };
+		B6D5068B275D242F0071EF99 /* ReceivedPokeCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5068A275D242F0071EF99 /* ReceivedPokeCardRepository.swift */; };
+		B6D5068E275D35780071EF99 /* AssetExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D5068D275D35780071EF99 /* AssetExtractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6D5062B275C5B7A0071EF99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D5060C275C5B770071EF99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D50613275C5B770071EF99;
+			remoteInfo = PokeCardDrop;
+		};
+		B6D50635275C5B7A0071EF99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D5060C275C5B770071EF99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D50613275C5B770071EF99;
+			remoteInfo = PokeCardDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B65DE94A275E45E100ECC3C6 /* PokeCardsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardsRepository.swift; sourceTree = "<group>"; };
+		B6D50614275C5B770071EF99 /* PokeCardDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeCardDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D50617275C5B770071EF99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6D50619275C5B780071EF99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B6D50620275C5B7A0071EF99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B6D50623275C5B7A0071EF99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B6D50625275C5B7A0071EF99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D5062A275C5B7A0071EF99 /* PokeCardDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeCardDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D5062E275C5B7A0071EF99 /* PokeCardDropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDropTests.swift; sourceTree = "<group>"; };
+		B6D50634275C5B7A0071EF99 /* PokeCardDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeCardDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D50638275C5B7A0071EF99 /* PokeCardDropUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDropUITests.swift; sourceTree = "<group>"; };
+		B6D5063A275C5B7A0071EF99 /* PokeCardDropUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDropUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B6D5064B275C67C60071EF99 /* PokeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCard.swift; sourceTree = "<group>"; };
+		B6D5064E275C6BC70071EF99 /* AssetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoader.swift; sourceTree = "<group>"; };
+		B6D50650275C6C110071EF99 /* Data.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Data.xcassets; sourceTree = "<group>"; };
+		B6D50656275C6EB70071EF99 /* PokeCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCards.swift; sourceTree = "<group>"; };
+		B6D5065F275C76F20071EF99 /* AirDropOnlyActivityItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropOnlyActivityItemSource.swift; sourceTree = "<group>"; };
+		B6D50662275C77560071EF99 /* Encoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		B6D50664275C78F10071EF99 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		B6D50669275D09D90071EF99 /* PokeCardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardListViewController.swift; sourceTree = "<group>"; };
+		B6D5066B275D09E10071EF99 /* PokeCardListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PokeCardListViewController.storyboard; sourceTree = "<group>"; };
+		B6D5066F275D0AE70071EF99 /* PokeCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardTableViewCell.swift; sourceTree = "<group>"; };
+		B6D50670275D0AE70071EF99 /* PokeCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokeCardTableViewCell.xib; sourceTree = "<group>"; };
+		B6D50673275D0C9D0071EF99 /* UITableViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		B6D5067A275D119E0071EF99 /* PokeCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeCardDetailViewController.swift; sourceTree = "<group>"; };
+		B6D5067C275D11A40071EF99 /* PokeCardDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PokeCardDetailViewController.storyboard; sourceTree = "<group>"; };
+		B6D50681275D20F70071EF99 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		B6D5068A275D242F0071EF99 /* ReceivedPokeCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedPokeCardRepository.swift; sourceTree = "<group>"; };
+		B6D5068D275D35780071EF99 /* AssetExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetExtractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D50611275C5B770071EF99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D50685275D21700071EF99 /* Toast in Frameworks */,
+				B6D50677275D0F0E0071EF99 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D50627275C5B7A0071EF99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D50631275C5B7A0071EF99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6D5060B275C5B770071EF99 = {
+			isa = PBXGroup;
+			children = (
+				B6D50616275C5B770071EF99 /* PokeCardDrop */,
+				B6D5062D275C5B7A0071EF99 /* PokeCardDropTests */,
+				B6D50637275C5B7A0071EF99 /* PokeCardDropUITests */,
+				B6D50615275C5B770071EF99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D50615275C5B770071EF99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50614275C5B770071EF99 /* PokeCardDrop.app */,
+				B6D5062A275C5B7A0071EF99 /* PokeCardDropTests.xctest */,
+				B6D50634275C5B7A0071EF99 /* PokeCardDropUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D50616275C5B770071EF99 /* PokeCardDrop */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50658275C756C0071EF99 /* Application */,
+				B6D5064D275C6BBC0071EF99 /* Data */,
+				B6D5064A275C67BF0071EF99 /* Entity */,
+				B6D50659275C766C0071EF99 /* Presentation */,
+				B6D50652275C6C4D0071EF99 /* Utility */,
+			);
+			path = PokeCardDrop;
+			sourceTree = "<group>";
+		};
+		B6D5062D275C5B7A0071EF99 /* PokeCardDropTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5062E275C5B7A0071EF99 /* PokeCardDropTests.swift */,
+			);
+			path = PokeCardDropTests;
+			sourceTree = "<group>";
+		};
+		B6D50637275C5B7A0071EF99 /* PokeCardDropUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50638275C5B7A0071EF99 /* PokeCardDropUITests.swift */,
+				B6D5063A275C5B7A0071EF99 /* PokeCardDropUITestsLaunchTests.swift */,
+			);
+			path = PokeCardDropUITests;
+			sourceTree = "<group>";
+		};
+		B6D5064A275C67BF0071EF99 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5064B275C67C60071EF99 /* PokeCard.swift */,
+				B6D50656275C6EB70071EF99 /* PokeCards.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B6D5064D275C6BBC0071EF99 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50689275D24140071EF99 /* Repository */,
+				B6D5065C275C76B20071EF99 /* Resource */,
+				B6D50661275C772B0071EF99 /* Utility */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B6D50652275C6C4D0071EF99 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50653275C6C550071EF99 /* Extension */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B6D50653275C6C550071EF99 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50673275D0C9D0071EF99 /* UITableViewCell+.swift */,
+				B6D50681275D20F70071EF99 /* UIViewController+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B6D50658275C756C0071EF99 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50617275C5B770071EF99 /* AppDelegate.swift */,
+				B6D50620275C5B7A0071EF99 /* Assets.xcassets */,
+				B6D50625275C5B7A0071EF99 /* Info.plist */,
+				B6D50622275C5B7A0071EF99 /* LaunchScreen.storyboard */,
+				B6D50619275C5B780071EF99 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6D50659275C766C0071EF99 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5065E275C76E60071EF99 /* ActivityItemSource */,
+				B6D5065A275C76870071EF99 /* Screen */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B6D5065A275C76870071EF99 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50678275D117B0071EF99 /* PokeCardDetail */,
+				B6D50668275D09C40071EF99 /* PokeCardList */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		B6D5065C275C76B20071EF99 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50650275C6C110071EF99 /* Data.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		B6D5065D275C76C10071EF99 /* AssetLoader */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5064E275C6BC70071EF99 /* AssetLoader.swift */,
+			);
+			path = AssetLoader;
+			sourceTree = "<group>";
+		};
+		B6D5065E275C76E60071EF99 /* ActivityItemSource */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5065F275C76F20071EF99 /* AirDropOnlyActivityItemSource.swift */,
+			);
+			path = ActivityItemSource;
+			sourceTree = "<group>";
+		};
+		B6D50661275C772B0071EF99 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5068C275D35610071EF99 /* AssetExtractor */,
+				B6D5065D275C76C10071EF99 /* AssetLoader */,
+				B6D50667275D02B80071EF99 /* Decoder */,
+				B6D50666275D02AC0071EF99 /* Encoder */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B6D50666275D02AC0071EF99 /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50662275C77560071EF99 /* Encoder.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		B6D50667275D02B80071EF99 /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50664275C78F10071EF99 /* Decoder.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		B6D50668275D09C40071EF99 /* PokeCardList */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5066D275D0AC30071EF99 /* View */,
+			);
+			path = PokeCardList;
+			sourceTree = "<group>";
+		};
+		B6D5066D275D0AC30071EF99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5066E275D0ACB0071EF99 /* Components */,
+				B6D5066B275D09E10071EF99 /* PokeCardListViewController.storyboard */,
+				B6D50669275D09D90071EF99 /* PokeCardListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6D5066E275D0ACB0071EF99 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5066F275D0AE70071EF99 /* PokeCardTableViewCell.swift */,
+				B6D50670275D0AE70071EF99 /* PokeCardTableViewCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B6D50678275D117B0071EF99 /* PokeCardDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B6D50679275D118B0071EF99 /* View */,
+			);
+			path = PokeCardDetail;
+			sourceTree = "<group>";
+		};
+		B6D50679275D118B0071EF99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5067C275D11A40071EF99 /* PokeCardDetailViewController.storyboard */,
+				B6D5067A275D119E0071EF99 /* PokeCardDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6D50689275D24140071EF99 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5068A275D242F0071EF99 /* ReceivedPokeCardRepository.swift */,
+				B65DE94A275E45E100ECC3C6 /* PokeCardsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B6D5068C275D35610071EF99 /* AssetExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				B6D5068D275D35780071EF99 /* AssetExtractor.swift */,
+			);
+			path = AssetExtractor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D50613275C5B770071EF99 /* PokeCardDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D5063E275C5B7A0071EF99 /* Build configuration list for PBXNativeTarget "PokeCardDrop" */;
+			buildPhases = (
+				B6D50610275C5B770071EF99 /* Sources */,
+				B6D50611275C5B770071EF99 /* Frameworks */,
+				B6D50612275C5B770071EF99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PokeCardDrop;
+			packageProductDependencies = (
+				B6D50676275D0F0E0071EF99 /* Kingfisher */,
+				B6D50684275D21700071EF99 /* Toast */,
+			);
+			productName = PokeCardDrop;
+			productReference = B6D50614275C5B770071EF99 /* PokeCardDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6D50629275C5B7A0071EF99 /* PokeCardDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D50641275C5B7A0071EF99 /* Build configuration list for PBXNativeTarget "PokeCardDropTests" */;
+			buildPhases = (
+				B6D50626275C5B7A0071EF99 /* Sources */,
+				B6D50627275C5B7A0071EF99 /* Frameworks */,
+				B6D50628275C5B7A0071EF99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D5062C275C5B7A0071EF99 /* PBXTargetDependency */,
+			);
+			name = PokeCardDropTests;
+			productName = PokeCardDropTests;
+			productReference = B6D5062A275C5B7A0071EF99 /* PokeCardDropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B6D50633275C5B7A0071EF99 /* PokeCardDropUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D50644275C5B7A0071EF99 /* Build configuration list for PBXNativeTarget "PokeCardDropUITests" */;
+			buildPhases = (
+				B6D50630275C5B7A0071EF99 /* Sources */,
+				B6D50631275C5B7A0071EF99 /* Frameworks */,
+				B6D50632275C5B7A0071EF99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D50636275C5B7A0071EF99 /* PBXTargetDependency */,
+			);
+			name = PokeCardDropUITests;
+			productName = PokeCardDropUITests;
+			productReference = B6D50634275C5B7A0071EF99 /* PokeCardDropUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D5060C275C5B770071EF99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					B6D50613275C5B770071EF99 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					B6D50629275C5B7A0071EF99 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B6D50613275C5B770071EF99;
+					};
+					B6D50633275C5B7A0071EF99 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = B6D50613275C5B770071EF99;
+					};
+				};
+			};
+			buildConfigurationList = B6D5060F275C5B770071EF99 /* Build configuration list for PBXProject "PokeCardDrop" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D5060B275C5B770071EF99;
+			packageReferences = (
+				B6D50675275D0F0E0071EF99 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				B6D50683275D21700071EF99 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
+			productRefGroup = B6D50615275C5B770071EF99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D50613275C5B770071EF99 /* PokeCardDrop */,
+				B6D50629275C5B7A0071EF99 /* PokeCardDropTests */,
+				B6D50633275C5B7A0071EF99 /* PokeCardDropUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D50612275C5B770071EF99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D50624275C5B7A0071EF99 /* LaunchScreen.storyboard in Resources */,
+				B6D50621275C5B7A0071EF99 /* Assets.xcassets in Resources */,
+				B6D5066C275D09E10071EF99 /* PokeCardListViewController.storyboard in Resources */,
+				B6D50672275D0AE70071EF99 /* PokeCardTableViewCell.xib in Resources */,
+				B6D5067D275D11A40071EF99 /* PokeCardDetailViewController.storyboard in Resources */,
+				B6D50651275C6C110071EF99 /* Data.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D50628275C5B7A0071EF99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D50632275C5B7A0071EF99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D50610275C5B770071EF99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65DE94B275E45E100ECC3C6 /* PokeCardsRepository.swift in Sources */,
+				B6D50682275D20F70071EF99 /* UIViewController+.swift in Sources */,
+				B6D5067B275D119E0071EF99 /* PokeCardDetailViewController.swift in Sources */,
+				B6D50663275C77560071EF99 /* Encoder.swift in Sources */,
+				B6D50660275C76F20071EF99 /* AirDropOnlyActivityItemSource.swift in Sources */,
+				B6D50618275C5B770071EF99 /* AppDelegate.swift in Sources */,
+				B6D5068E275D35780071EF99 /* AssetExtractor.swift in Sources */,
+				B6D5064F275C6BC70071EF99 /* AssetLoader.swift in Sources */,
+				B6D5068B275D242F0071EF99 /* ReceivedPokeCardRepository.swift in Sources */,
+				B6D5066A275D09D90071EF99 /* PokeCardListViewController.swift in Sources */,
+				B6D50665275C78F10071EF99 /* Decoder.swift in Sources */,
+				B6D5061A275C5B780071EF99 /* SceneDelegate.swift in Sources */,
+				B6D50657275C6EB70071EF99 /* PokeCards.swift in Sources */,
+				B6D50674275D0C9D0071EF99 /* UITableViewCell+.swift in Sources */,
+				B6D50671275D0AE70071EF99 /* PokeCardTableViewCell.swift in Sources */,
+				B6D5064C275C67C60071EF99 /* PokeCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D50626275C5B7A0071EF99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5062F275C5B7A0071EF99 /* PokeCardDropTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D50630275C5B7A0071EF99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D5063B275C5B7A0071EF99 /* PokeCardDropUITestsLaunchTests.swift in Sources */,
+				B6D50639275C5B7A0071EF99 /* PokeCardDropUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6D5062C275C5B7A0071EF99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D50613275C5B770071EF99 /* PokeCardDrop */;
+			targetProxy = B6D5062B275C5B7A0071EF99 /* PBXContainerItemProxy */;
+		};
+		B6D50636275C5B7A0071EF99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D50613275C5B770071EF99 /* PokeCardDrop */;
+			targetProxy = B6D50635275C5B7A0071EF99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6D50622275C5B7A0071EF99 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D50623275C5B7A0071EF99 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D5063C275C5B7A0071EF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6D5063D275C5B7A0071EF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D5063F275C5B7A0071EF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeCardDrop/Application/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = PokeCardListViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.PokeCardDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6D50640275C5B7A0071EF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PokeCardDrop/Application/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = PokeCardListViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.PokeCardDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B6D50642275C5B7A0071EF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.PokeCardDropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeCardDrop.app/PokeCardDrop";
+			};
+			name = Debug;
+		};
+		B6D50643275C5B7A0071EF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.PokeCardDropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PokeCardDrop.app/PokeCardDrop";
+			};
+			name = Release;
+		};
+		B6D50645275C5B7A0071EF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.PokeCardDropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PokeCardDrop;
+			};
+			name = Debug;
+		};
+		B6D50646275C5B7A0071EF99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B8PR34D6DP;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.yuoku.PokeCardDropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PokeCardDrop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D5060F275C5B770071EF99 /* Build configuration list for PBXProject "PokeCardDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5063C275C5B7A0071EF99 /* Debug */,
+				B6D5063D275C5B7A0071EF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D5063E275C5B7A0071EF99 /* Build configuration list for PBXNativeTarget "PokeCardDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D5063F275C5B7A0071EF99 /* Debug */,
+				B6D50640275C5B7A0071EF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D50641275C5B7A0071EF99 /* Build configuration list for PBXNativeTarget "PokeCardDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D50642275C5B7A0071EF99 /* Debug */,
+				B6D50643275C5B7A0071EF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D50644275C5B7A0071EF99 /* Build configuration list for PBXNativeTarget "PokeCardDropUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D50645275C5B7A0071EF99 /* Debug */,
+				B6D50646275C5B7A0071EF99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6D50675275D0F0E0071EF99 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		B6D50683275D21700071EF99 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6D50676275D0F0E0071EF99 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6D50675275D0F0E0071EF99 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		B6D50684275D21700071EF99 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6D50683275D21700071EF99 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B6D5060C275C5B770071EF99 /* Project object */;
+}
