@@ -10,7 +10,7 @@ import Foundation
 enum Encoder {
 
     /// Json encoding
-    static func jsonString<T: Encodable>(from encodableData: T) -> Data {
+    static func jsonData<T: Encodable>(from encodableData: T) -> Data {
         let encoder = JSONEncoder()
         do {
             let data = try encoder.encode(encodableData)

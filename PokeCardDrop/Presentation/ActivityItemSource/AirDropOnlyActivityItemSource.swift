@@ -17,7 +17,7 @@ final class AirDropOnlyActivityItemSource: NSObject {
     }
 
     convenience init(pokeCard: PokeCard) {
-        let data = Encoder.jsonString(from: pokeCard)
+        let data = Encoder.jsonData(from: pokeCard)
         self.init(item: data)
     }
 }
